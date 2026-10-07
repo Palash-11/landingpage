@@ -1,0 +1,68 @@
+[
+  {
+    "model": "catalog.product",
+    "pk": 1,
+    "fields": {
+      "name": "Organic Beetroot Powder",
+      "slug": "organic-beetroot-powder",
+      "description": "100% Premium Organic Beetroot Powder for daily health and energy.",
+      "price": "650.00",
+      "discount_price": "550.00",
+      "stock_quantity": 50,
+      "image": "",
+      "is_active": true,
+      "created_at": "2026-10-02T08:00:00Z"
+    }
+  },
+  {
+    "model": "catalog.deliveryzone",
+    "pk": 1,
+    "fields": {
+      "name": "Inside Dhaka",
+      "charge": "60.00",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.deliveryzone",
+    "pk": 2,
+    "fields": {
+      "name": "Outside Dhaka",
+      "charge": "120.00",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.coupon",
+    "pk": 1,
+    "fields": {
+      "code": "BEET50",
+      "discount_amount": "50.00",
+      "is_active": true,
+      "valid_from": null,
+      "valid_to": null
+    }
+  },
+  {
+    "model": "reviews.faq",
+    "pk": 1,
+    "fields": {
+      "question": "হাউ টু ইউজ দিস প্রোডাক্ট?",
+      "answer": "প্রতিদিন ১ চামচ হালকা গরম পানিতে মিশিয়ে খাবেন।",
+      "order_number": 1,
+      "is_active": true
+    }
+  },
+  {
+    "model": "reviews.review",
+    "pk": 1,
+    "fields": {
+      "product": 1,
+      "reviewer_name": "Karim Hossain",
+      "rating": 5,
+      "comment": "খুবই প্রিমিয়াম কোয়ালিটির বিটরুট পাউডার!",
+      "is_approved": true,
+      "created_at": "2026-10-02T08:00:00Z"
+    }
+  }
+]
