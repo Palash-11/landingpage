@@ -1,13 +1,12 @@
-from django.urls import path
-from .views import DashboardCountsView, OrderCreateView
+from django.conf import settings
+from django.conf.urls.static import static
+from django.contrib import admin
+from django.urls import include, path
 
 urlpatterns = [
-    # ১. ফ্রন্টএন্ড ফর্ম থেকে আসা অর্ডারের endpoint
-    path("orders/", OrderCreateView.as_view(), name="order-create"),
-    # ২. এডমিন ড্যাশবোর্ডের সামারির endpoint (ঐচ্ছিক)
-    path(
-        "dashboard/counts/",
-        DashboardCountsView.as_view(),
-        name="dashboard-counts",
-    ),
+    path('admin/', admin.site.urls),
+    # আপনার অন্যান্য API রাউট...
 ]
+
+# Production এবং Local উভয় পরিবেশেই Static ফাইল সার্ভ করার নিশ্চিতকরণ
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
