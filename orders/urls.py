@@ -6,7 +6,7 @@ router = DefaultRouter()
 router.register(r'admin-orders', OrderAdminViewSet)
 
 urlpatterns = [
-    path('checkout/', OrderCreateView.as_view(), name='checkout'),
+    path('orders/checkout/', OrderCreateView.as_view(), name='checkout'),
     path('leads/', LeadCreateView.as_view(), name='lead_create'),
     path('', include(router.urls)),
 ]

@@ -114,6 +114,16 @@ else:
             'NAME': BASE_DIR / 'db.sqlite3',
         }
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
 # Password validation
 # https://docs.djangoproject.com/en/6.1/ref/settings/#auth-password-validators
@@ -177,8 +187,8 @@ MAILERS = {
 CORS_ALLOW_ALL_ORIGINS = True
 
 CORS_ALLOWED_ORIGINS = [
+    "https://beetroot-shop-zhig.vercel.app",  # আপনার লাইভ Vercel URL
     "http://localhost:3000",
-    "http://127.0.0.1:3000",
 ]
 
 REST_FRAMEWORK = {
