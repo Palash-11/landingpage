@@ -184,10 +184,12 @@ MAILERS = {
     },
 }
 
-CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_ALL_ORIGINS = False  # প্রোডাকশনে
 
 CORS_ALLOWED_ORIGINS = [
-    "https://beetroot-shop-zhig.vercel.app",  # আপনার লাইভ Vercel URL
+    "https://beetroot-shop-ebn4-c0m5qjiit-palash-prithibi-bsi8.vercel.app",
+    "http://localhost:5173",
+    "http://127.0.0.1:5173",
     "http://localhost:3000",
 ]
 
