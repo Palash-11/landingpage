@@ -184,11 +184,11 @@ MAILERS = {
     },
 }
 
-CORS_ALLOW_ALL_ORIGINS = False  # প্রোডাকশনে
+CORS_ALLOW_ALL_ORIGINS = True  # প্রোডাকশনে
 
 CORS_ALLOWED_ORIGINS = [
-    "https://beetroot-shop-ebn4.vercel.app",
-    "http://localhost:5173",
+    "https:beetroot-shop-ebn4.vercel.app",
+    "http:localhost:5173",
 ]
 
 REST_FRAMEWORK = {
