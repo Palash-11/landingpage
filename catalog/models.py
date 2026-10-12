@@ -9,6 +9,7 @@ class Product(models.Model):
     is_active = models.BooleanField(default=True)
     description = models.TextField(blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
+    image = models.ImageField(upload_to="products/", null=True, blank=True)
 
     def __str__(self):
         return self.name
